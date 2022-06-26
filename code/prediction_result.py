@@ -12,9 +12,9 @@ from training_modelling import*
 
 
 ############################################################################## Importing data cleaning
-work = r'C:/Users/hthiam/Desktop/python ecole/'
+work = r'/Users/hamidouthiam/Desktop/projectpython_HamidouTHIAM/data out/' # you may to give the path of the data_cleaning 
 path = 'data_cleaning.csv'
-books = pd.read_csv(path, sep = ";")
+books = pd.read_csv(work+path, sep = ";")
 
 ############################################################################## Spliting data 
 # Get features

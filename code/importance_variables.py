@@ -15,7 +15,7 @@ import seaborn as sns; sns.set_theme()
 import statsmodels.api 
 
 ############################################################################## Importing data cleaning
-work = r'C:/Users/hthiam/Desktop/python ecole/'
+work = r'/Users/hamidouthiam/Desktop/projectpython_HamidouTHIAM/data out/'# you may to give the path of the data_cleaning 
 path = 'data_cleaning.csv'
 books = pd.read_csv(work +path, sep = ";")
 

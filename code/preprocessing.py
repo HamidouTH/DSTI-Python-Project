@@ -12,7 +12,9 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn import preprocessing 
 
 ############################################################################## Importing data
-work = r'C:/Users/hthiam/Desktop/python ecole/'
+work = r'/Users/hamidouthiam/Desktop/projectpython_HamidouTHIAM/data in/' # you may to give the path of the books data
+work_export = r'/Users/hamidouthiam/Desktop/projectpython_HamidouTHIAM/data out/'
+
 path = 'books.csv'
 books = pd.read_csv(work+path, sep =",", on_bad_lines='skip')
 
@@ -68,7 +70,7 @@ data_cleaning.rename(columns={'  num_pages': 'num_pages'}, inplace=True)
 data_cleaning[list(data_cleaning)] = data_cleaning[list(data_cleaning)].astype(float)
 
 path_export = 'data_cleaning.csv'
-data_cleaning.to_csv(work+path_export,
+data_cleaning.to_csv(work_export+path_export,
                sep=';',
                na_rep='',
                header=True,
